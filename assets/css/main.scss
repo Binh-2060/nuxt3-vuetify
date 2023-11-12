@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Noto Sans Lao";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/NotoSansLao-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Noto Sans Lao";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/NotoSansLao-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Roboto-Bold.ttf");
+}
+$navigation-drawer-border-width: 0;
+
+$primary-color: #ff5722;
+
+.v-navigation-drawer__border {
+  display: none;
+}
+
+$body-font-family: "Roboto";
+$title-font: "Roboto";
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.v-application {
+  font-family: $body-font-family, sans-serif !important;
+  .title {
+    font-family: $title-font, sans-serif !important;
+  }
+}
+
+.swal2-container {
+  font-family: "Roboto", Avenir, Helvetica, Arial, sans-serif;
+}
+
+label.required {
+  &::after {
+    content: "*";
+    color: red;
+  }
+}
+
+.required label::after {
+  content: "*";
+  color: red;
+}
